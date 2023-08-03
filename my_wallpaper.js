@@ -6,11 +6,15 @@ let headX = 90;
  let head2X = 80;
  let head2Y = 90;
  
+ let starX = 90
+ let starY = 80 
+
  let head3X = 80;
  let head3Y = 90;
 
  let squareX = 10;
  let squareY = 10;
+
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -41,16 +45,16 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  DrawBlackSquare(83, 124);
  
  DrawBlackSquare(83, 42);
- DrawSmiley(100,50);
+ DrawSmiley(80, 140);
  DrawBlackSquare(124, 1);
  
  DrawBlackSquare(124, 83);
 
- DrawBlackSquare(164, 42);
- DrawBlackSquare(165, 124);
+ DrawBlackSquare(166, 42);
+ DrawBlackSquare(166, 125);
  DrawSmiley2(170, 165);
  DrawBlackSquare(124, 164);
- DrawSmiley2 (80,140);
+ DrawSmiley2 (100,50);
 
  //DrawSmiley(100,100);
  //DrawSmiley(50,50);
@@ -61,15 +65,20 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
 
  function DrawBlackSquare(squareX, squareY){
- stroke(300, 300, 300);
- fill(300, 300, 300);
+ stroke(153, 51, 204);
+ fill(153, 51, 204);
  rect(squareX , squareY, 40);
  }
-
+ function DrawStar(starX, starY){
+  stroke(255, 204, 0);
+  fill(255, 204, 0);
+  quad(50, 62, 86, 50, 50, 38, 14, 50);
+  
+ }
  function DrawSmiley(headX, headY){
 
- stroke(255, 204, 0);//headshape
- fill(255, 204, 0);
+ stroke(153, 204, 204);//headshape
+ fill(153, 204, 204);
  ellipse(headX, headY -10, 60);
  ellipse(headX -10, headY, 25, 50);
  ellipse(headX, headY, 15, 50);
@@ -95,8 +104,8 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 }
 function DrawSmiley2(head2X, head2Y){
 
- stroke(255, 204, 0);//headshape
- fill(255, 204, 0);
+ stroke(153, 255, 204);//headshape
+ fill(153, 255, 204);
  ellipse(head2X, head2Y -10, 60);
  ellipse(head2X -19, head2Y, 15, 50);
  ellipse(head2X, head2Y, 45, 70);
