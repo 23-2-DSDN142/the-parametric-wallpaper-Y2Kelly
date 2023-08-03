@@ -27,21 +27,29 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  
  DrawBlackSquare(42 , 1);
  DrawBlackSquare(1, 42);
+ 
  DrawBlackSquare(42, 83);
  DrawBlackSquare(1, 124);
  DrawBlackSquare(42, 164);
  DrawBlackSquare(83, 124);
  DrawBlackSquare(83, 42);
  DrawBlackSquare(124, 1);
+ DrawSmiley(100,100);
  DrawBlackSquare(124, 83);
+
  DrawBlackSquare(164, 42);
+
  DrawBlackSquare(165, 124);
  DrawBlackSquare(124, 164);
  //DrawSmiley(100,100);
- // DrawSmiley(50,50);
- //DrawSmiley2(40, 40);
- //DrawSmiley3(150, 150);
+ //DrawSmiley(50,50);
+ DrawSmiley2(180, 190);
+ DrawSmiley3(200, 80);
+ DrawSmiley3(1, 80);
+
 }
+
+
  function DrawBlackSquare(squareX, squareY){
  stroke(0, 0, 0);
  fill(0, 0, 0);
@@ -52,7 +60,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
  stroke(255, 204, 0);//headshape
  fill(255, 204, 0);
- ellipse(headX, headY -10, 60);
+ ellipse(headX, headY -10, headX -40);
  ellipse(headX -10, headY, 25, 50);
  ellipse(headX, headY, 15, 50);
 
@@ -79,7 +87,7 @@ function DrawSmiley2(headX, headY){
 
  stroke(255, 204, 0);//headshape
  fill(255, 204, 0);
- ellipse(headX, headY -10, 60);
+ ellipse(headX, headY -10, headX -120);
  ellipse(headX -19, headY, 15, 50);
  ellipse(headX, headY, 45, 70);
 
@@ -131,5 +139,4 @@ function DrawSmiley2(headX, headY){
   bezierVertex(headX -15, headY +20, headX +20, headY +20, headX +25, headY -10);
   endShape();
  
-
 }
