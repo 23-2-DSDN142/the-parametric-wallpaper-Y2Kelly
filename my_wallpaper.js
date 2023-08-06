@@ -7,8 +7,6 @@ let headY = 90;
  let head2X = 80;
  let head2Y = 90;
  
- let starX = 90
- let starY = 80 
 
  let head3X = 80;
  let head3Y = 90;
@@ -46,22 +44,21 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  DrawBlackSquare(83, 124);
  
  DrawBlackSquare(83, 42);
- DrawSmiley(80, 140);
+ DrawSmiley(80, 140);//green head
  DrawBlackSquare(124, 1);
  
  DrawBlackSquare(124, 83);
 
  DrawBlackSquare(166, 42);
  DrawBlackSquare(166, 125);
- DrawSmiley2(170, 165);
+ DrawSmiley2(170, 165);//neon blue head
  DrawBlackSquare(124, 164);
- DrawSmiley2 (100,50);
+ DrawSmiley2 (100,50);//neon blue
 
  //DrawSmiley(100,100);
  //DrawSmiley(50,50);
- DrawSmiley3(200, 80);
- DrawSmiley3(1, 80);
-
+ DrawSmiley3(200, 80);//yellow smiley
+ DrawSmiley3(1, 80);//yellow smiley
 }
 
 
@@ -73,8 +70,8 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   
  function DrawSmiley(headX, headY){
 
- stroke(153, 204, 204);//headshape headX=80, headY=90
- fill(153, 204, 204);
+ stroke(105, 219, 14);//headshape headX=80, headY=90
+ fill(105, 219, 14);
  ellipse(headX, headY -10, headX -20);
  ellipse(headX -10, headY, headX -55, headY -90);
  ellipse(headX, headY, headX -65, headY -90);
