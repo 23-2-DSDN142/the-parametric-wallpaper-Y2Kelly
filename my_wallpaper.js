@@ -2,7 +2,8 @@
 let rect_width  = 200;
 let rect_height = 200;
 
-let headX = 90;
+let headX = 80;
+let headY = 90;
  let head2X = 80;
  let head2Y = 90;
  
@@ -69,19 +70,14 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  fill(153, 51, 204);
  rect(squareX , squareY, 40);
  }
- function DrawStar(starX, starY){
-  stroke(255, 204, 0);
-  fill(255, 204, 0);
-  quad(50, 62, 86, 50, 50, 38, 14, 50);
   
- }
  function DrawSmiley(headX, headY){
 
- stroke(153, 204, 204);//headshape
+ stroke(153, 204, 204);//headshape headX=80, headY=90
  fill(153, 204, 204);
- ellipse(headX, headY -10, 60);
- ellipse(headX -10, headY, 25, 50);
- ellipse(headX, headY, 15, 50);
+ ellipse(headX, headY -10, headX -20);
+ ellipse(headX -10, headY, headX -55, headY -90);
+ ellipse(headX, headY, headX -65, headY -90);
 
  stroke(0, 0, 0);//eyes :O
  fill(0, 0, 0);
@@ -107,7 +103,7 @@ function DrawSmiley2(head2X, head2Y){
  stroke(153, 255, 204);//headshape
  fill(153, 255, 204);
  ellipse(head2X, head2Y -10, 60);
- ellipse(head2X -19, head2Y, 15, 50);
+ ellipse(head2X -22, head2Y, 15, 50);
  ellipse(head2X, head2Y, 45, 70);
 
  stroke(0, 0, 0);//eyes :O
