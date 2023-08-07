@@ -54,24 +54,15 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  DrawPurpleSquare(1, 124);
  DrawPurpleSquare(42, 164);
  DrawPurpleSquare(83, 124);
- 
  DrawPurpleSquare(83, 42);
  DrawGREENSmiley(Ghead2X, Ghead2Y);//green head
  DrawPurpleSquare(124, 1);
- 
  DrawPurpleSquare(124, 83);
-
  DrawPurpleSquare(166, 42);
  DrawPurpleSquare(166, 125);
  DrawBLUESmiley(BheadX-40, BheadY+100);//neon blue head
- 
  DrawPurpleSquare(squareX+120, squareY+180);
- 
-
  DrawBLUESmiley (BheadX-200, BheadY-100);//neon blue
-
- //DrawSmiley(100,100);
- //DrawSmiley(50,50);
  DrawYELLOWSmiley(Yhead3X-79, Yhead3Y);//yellow smiley
  DrawYELLOWSmiley(Yhead3X+479, Yhead3Y);//yellow smiley
 
@@ -85,7 +76,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   
  function DrawGREENSmiley(headX, headY){
 
- stroke(105, 219, 14);//headshape headX=80, headY=90
+ stroke(105, 219, 14);//headshape
  fill(105, 219, 14);
  ellipse(headX, headY -10, headX -20);
  ellipse(headX -10, headY, headX -55, headY -90);
@@ -145,10 +136,7 @@ function DrawBLUESmiley(head2X, head2Y){
   
   stroke(255, 204, 0);//headshape
   fill(255, 204, 0);
-  ellipse(head3X, head3Y -10, 60);
-  //ellipse(headX -10, headY, 25, 50);
-  //ellipse(headX, headY, 15, 50);
- 
+  ellipse(head3X, head3Y -10, 60); 
 
   stroke(0, 0, 0);//eyes :O
   fill(0, 0, 0);
@@ -157,10 +145,6 @@ function DrawBLUESmiley(head2X, head2Y){
   
   strokeWeight(2);
   noFill();//mouth :D
- // beginShape();
-  //vertex(headX -14, headY +3);
-  //bezierVertex(headX -25, headY -9, headX -30, headY, headX -25, headY -15);
-  //endShape();
  
   noFill();//mouth :D
   beginShape();
