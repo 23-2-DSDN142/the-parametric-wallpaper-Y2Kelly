@@ -3,18 +3,23 @@ let rect_width  = 200;
 let rect_height = 200;
 
 let BheadX = 300;
-let BheadY = 180;
+let BheadY = 150;
 
 let Ghead2X = 80;
-let Ghead2Y = 150;
+let Ghead2Y = 80;
  
 
 let Yhead3X = 80;
-let Yhead3Y = 290;
+let Yhead3Y = 490;
 
 let squareX = 100;
 let squareY = 100;
 
+if(squareX > 100) {
+ DrawGREENSmiley(195, 195);
+} else {
+ DrawGREENsmiley(Ghead2X, Ghead2Y);
+}
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
