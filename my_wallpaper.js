@@ -41,31 +41,31 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   fill(0, 0, 0);
   rect(1 ,1, rect_width, rect_height);
  
-  DrawBlackSquare(195, 1);
-  DrawBlackSquare(195, 164);
-  DrawBlackSquare(195, 84);
-  DrawBlackSquare(-30, 84);
-  DrawBlackSquare(-30, 1);
-  DrawBlackSquare(-30, 164);
- DrawBlackSquare(42 , 1);
- DrawBlackSquare(1, 42);
+  DrawPurpleSquare(195, 1);//Background Tiling(they are actually purple)
+  DrawPurpleSquare(195, 164);
+  DrawPurpleSquare(195, 84);
+  DrawPurpleSquare(-30, 84);
+  DrawPurpleSquare(-30, 1);
+  DrawPurpleSquare(-30, 164);
+ DrawPurpleSquare(42 , 1);
+ DrawPurpleSquare(1, 42);
  
- DrawBlackSquare(42, 83);
- DrawBlackSquare(1, 124);
- DrawBlackSquare(42, 164);
- DrawBlackSquare(83, 124);
+ DrawPurpleSquare(42, 83);
+ DrawPurpleSquare(1, 124);
+ DrawPurpleSquare(42, 164);
+ DrawPurpleSquare(83, 124);
  
- DrawBlackSquare(83, 42);
+ DrawPurpleSquare(83, 42);
  DrawGREENSmiley(Ghead2X, Ghead2Y);//green head
- DrawBlackSquare(124, 1);
+ DrawPurpleSquare(124, 1);
  
- DrawBlackSquare(124, 83);
+ DrawPurpleSquare(124, 83);
 
- DrawBlackSquare(166, 42);
- DrawBlackSquare(166, 125);
+ DrawPurpleSquare(166, 42);
+ DrawPurpleSquare(166, 125);
  DrawBLUESmiley(BheadX-40, BheadY+100);//neon blue head
  
- DrawBlackSquare(squareX+120, squareY+180);
+ DrawPurpleSquare(squareX+120, squareY+180);
  
 
  DrawBLUESmiley (BheadX-200, BheadY-100);//neon blue
@@ -77,7 +77,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
 }
 
- function DrawBlackSquare(squareX, squareY){
+ function DrawPurpleSquare(squareX, squareY){
  stroke(153, 51, 204);
  fill(153, 51, 204);
  rect(squareX , squareY, 40);
