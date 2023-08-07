@@ -2,17 +2,18 @@
 let rect_width  = 200;
 let rect_height = 200;
 
-let headX = 80;
-let headY = 90;
- let head2X = 80;
- let head2Y = 90;
+let BheadX = 300;
+let BheadY = 180;
+
+let Ghead2X = 80;
+let Ghead2Y = 150;
  
 
- let head3X = 80;
- let head3Y = 90;
+let Yhead3X = 80;
+let Yhead3Y = 290;
 
- let squareX = 10;
- let squareY = 10;
+let squareX = 100;
+let squareY = 100;
 
 
 function setup_wallpaper(pWallpaper) {
@@ -35,6 +36,12 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   fill(0, 0, 0);
   rect(1 ,1, rect_width, rect_height);
  
+  DrawBlackSquare(195, 1);
+  DrawBlackSquare(195, 164);
+  DrawBlackSquare(195, 84);
+  DrawBlackSquare(-30, 84);
+  DrawBlackSquare(-30, 1);
+  DrawBlackSquare(-30, 164);
  DrawBlackSquare(42 , 1);
  DrawBlackSquare(1, 42);
  
@@ -44,23 +51,26 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  DrawBlackSquare(83, 124);
  
  DrawBlackSquare(83, 42);
- DrawSmiley(80, 140);//green head
+ DrawGREENSmiley(Ghead2X, Ghead2Y);//green head
  DrawBlackSquare(124, 1);
  
  DrawBlackSquare(124, 83);
 
  DrawBlackSquare(166, 42);
  DrawBlackSquare(166, 125);
- DrawSmiley2(170, 165);//neon blue head
- DrawBlackSquare(124, 164);
- DrawSmiley2 (100,50);//neon blue
+ DrawBLUESmiley(BheadX-40, BheadY+100);//neon blue head
+ 
+ DrawBlackSquare(squareX+120, squareY+180);
+ 
+
+ DrawBLUESmiley (BheadX-200, BheadY-100);//neon blue
 
  //DrawSmiley(100,100);
  //DrawSmiley(50,50);
- DrawSmiley3(200, 80);//yellow smiley
- DrawSmiley3(1, 80);//yellow smiley
-}
+ DrawYELLOWSmiley(Yhead3X-79, Yhead3Y);//yellow smiley
+ DrawYELLOWSmiley(Yhead3X+479, Yhead3Y);//yellow smiley
 
+}
 
  function DrawBlackSquare(squareX, squareY){
  stroke(153, 51, 204);
@@ -68,7 +78,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  rect(squareX , squareY, 40);
  }
   
- function DrawSmiley(headX, headY){
+ function DrawGREENSmiley(headX, headY){
 
  stroke(105, 219, 14);//headshape headX=80, headY=90
  fill(105, 219, 14);
@@ -93,10 +103,12 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  vertex(headX -15, headY -5);
  bezierVertex(headX -15, headY +10, headX +30, headY +20, headX +25, headY -15);
  endShape();
- 
-}
-function DrawSmiley2(head2X, head2Y){
 
+
+}
+function DrawBLUESmiley(head2X, head2Y){
+  
+  scale(0.6);
  stroke(153, 255, 204);//headshape
  fill(153, 255, 204);
  ellipse(head2X, head2Y -10, 60);
@@ -124,8 +136,8 @@ function DrawSmiley2(head2X, head2Y){
 
 }
 
- function DrawSmiley3(head3X, head3Y){
-
+ function DrawYELLOWSmiley(head3X, head3Y){
+  
   stroke(255, 204, 0);//headshape
   fill(255, 204, 0);
   ellipse(head3X, head3Y -10, 60);
@@ -151,4 +163,7 @@ function DrawSmiley2(head2X, head2Y){
   bezierVertex(head3X -15, head3Y +20, head3X +20, head3Y +20, head3X +25, head3Y -10);
   endShape();
  
+  stroke(153, 51, 204);
+  fill(153, 51, 204);
+  rect(345 , 458, 120, 101);
 }
